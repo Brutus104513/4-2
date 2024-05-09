@@ -1,0 +1,75 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Width="900" 
+        Height="685"
+        x:Class="GetStartedApp.MainWindow"
+        Title="4-3"
+        CanResize="False">
+
+    <Grid RowDefinitions = "auto, *"
+        ColumnDefinitions = "*, auto, *">
+
+<!-- Верхняя строка -->
+
+        <Border BorderThickness = "1" BorderBrush = "Black" Grid.ColumnSpan = "3">
+            
+            <DockPanel Grid.ColumnSpan = "3">
+                <TextBlock Margin = "5 0 0 10"> Home </TextBlock>
+                <TextBlock Margin = "15 0 0 0"> About </TextBlock>
+                <TextBlock Margin = "15 0 0 0"> Blog's Main Topic 1 </TextBlock>
+                <TextBlock Margin = "15 0 0 0"> Blog's Main Topic 2 </TextBlock>
+                <TextBlock Margin = "15 0 0 0"> Blog's Main Topic 3 </TextBlock>
+                <TextBlock Margin = "15 0 0 0"> Associated blogs </TextBlock>
+                <TextBlock Margin = "0 0 30 0" DockPanel.Dock = "Right" TextAlignment = "Right"> RSS </TextBlock>
+            </DockPanel>
+
+        </Border>
+
+<!-- Средняя строка, левый столбец -->
+
+        <StackPanel Grid.Row = "1" Grid.Column = "0" Margin = "0 20 20 0" Orientation = "Vertical" Grid.ColumnSpan = "2">
+            
+            <TextBlock Margin = "5 0 0 0"> Article 1 </TextBlock>
+            <TextBlock TextWrapping = "Wrap" Margin = "5 15 0 0"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tempus ut mauris id hendrerit. Suspendisse vestibulum feugiat tellus quis ultrices. Pellentesque ultrices lorem mollis tellus accumsan viverra. Morbi magna enim, consectetur in gravida vitae, ultrices ac ipsum. Quisque ut elit diam. Nulla facilisi. Donec elementum in enim eu blandit. Phasellus eleifend ultricies magna, sed tristique massa porttitor ut. Proin mattis velit libero, ac malesuada risus efficitur non. Fusce sed nulla vitae diam interdum eleifend. Quisque justo leo, dictum in sagittis eget, auctor tempus risus. In metus augue, placerat a venenatis vitae, iaculis vitae elit. </TextBlock>
+            <TextBlock TextWrapping = "Wrap" Margin = "5 0 0 0"> Fusce sollicitudin dolor ut nunc tempor, vel ultrices magna vehicula. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec cursus tortor sed nisi rutrum volutpat. Nam est orci, condimentum in mi vitae, fringilla varius mauris. Aenean rhoncus, dolor nec dictum sagittis, ligula tortor vestibulum ante, ac elementum tellus purus nec dolor. Curabitur tincidunt nulla euismod lorem cursus, eu bibendum quam ultricies. Phasellus ultricies, dolor a vehicula euismod, nisi justo commodo nulla, vitae consectetur lectus metus dictum orci. </TextBlock>
+            
+<!-- Изображение -->
+
+            <Image Source = "resm:Avalonia.Skia.Assets.NoiseAsset_256X256_PNG.png?assembly=Avalonia.Skia" 
+                Height = "300" 
+                Width = "350"
+                Stretch = "Fill"
+                Margin = "0 10 0 0"> </Image>
+
+<!-- Нижняя строка, левый столбец -->
+
+            <DockPanel Grid.Row = "1" Grid.Column = "0" Margin = "0 5 0 0" Grid.ColumnSpan = "2">
+                <TextBlock Margin = "5 5 0 0"> Tags </TextBlock>
+                <TextBlock Margin = "15 5 0 0"> Tag 1 </TextBlock>
+                <TextBlock Margin = "15 5 0 0"> Tag 2 </TextBlock>
+                <TextBlock Margin = "15 5 0 0"> Tag 3 </TextBlock>
+                <TextBlock Margin = "15 5 0 0"> Tag 4 </TextBlock>
+                <TextBlock DockPanel.Dock = "Right" Margin = "0 0 5 0" FontStyle = "Italic" FontWeight = "Bold"> 4/5 </TextBlock>
+                <TextBlock DockPanel.Dock = "Right" TextAlignment = "Right" Margin = "0 0 15 0"> Rate this article </TextBlock>
+            </DockPanel>
+
+        </StackPanel>
+
+        <Border BorderThickness = "200" Grid.Row = "1" Grid.Column = "1" />
+
+<!-- Средняя строка, правый столбец -->
+
+        <StackPanel Grid.Row = "1" Grid.Column = "2" Margin = "20 0 0 0" Orientation = "Vertical">
+            <TextBlock TextWrapping = "Wrap" Margin = "30 50 5 0"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel magna justo. Phasellus malesuada eros vitae facilisis euismod. Nam vel placerat enim. Pellentesque quis finibus lacus. Donec dapibus lacinia orci. Vestibulum efficitur, ligula at cursus iaculis, ex purus elementum mauris, eget elementum lorem tellus vitae urna. Morbi laoreet.  </TextBlock>
+            <TextBlock TextAlignment = "Right" Margin = "0 5 10 0" TextDecorations = "Underline"> More </TextBlock>
+            <TextBlock Margin = "0 5 10 0" TextAlignment = "Right"> Yesterday </TextBlock>
+            <TextBlock TextWrapping = "Wrap" Margin = "30 15 5 0"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel magna justo. Phasellus malesuada eros vitae facilisis euismod. Nam vel placerat enim. Pellentesque quis finibus lacus. Donec dapibus lacinia orci. Vestibulum efficitur, ligula at cursus iaculis, ex purus elementum mauris, eget elementum lorem tellus vitae urna. Morbi laoreet.  </TextBlock>
+            <TextBlock TextAlignment = "Right" Margin = "0 5 10 0" TextDecorations = "Underline"> More </TextBlock>
+            <TextBlock Margin = "0 5 10 0" TextAlignment = "Right"> 1 week ago </TextBlock>
+        </StackPanel>
+
+    </Grid>
+</Window>
